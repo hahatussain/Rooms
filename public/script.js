@@ -199,58 +199,58 @@ inviteButton.addEventListener("click", (e) => {
 
 //screen sharing
 
-// if (adapter.browserDetails.browser == 'firefox') {
-//   adapter.browserShim.shimGetDisplayMedia(window, 'screen');
-// }
+if (adapter.browserDetails.browser == 'firefox') {
+  adapter.browserShim.shimGetDisplayMedia(window, 'screen');
+}
 
-// function handleSuccess(stream) {
-//   startButton.disabled = true;
-//   const video = document.createElement('video');
-//   video.srcObject = stream;
-//   video.addEventListener("loadedmetadata", () => {
-//     video.play();
-//   });
+function handleSuccess(stream) {
+  startButton.disabled = true;
+  const video = document.createElement('video');
+  video.srcObject = stream;
+  video.addEventListener("loadedmetadata", () => {
+    video.play();
+  });
 
-//   videoGrid.append(video);
-//   let totalUsers = document.getElementsByTagName("video").length;
-//   if (totalUsers > 1) {
-//     for (let index = 0; index < totalUsers; index++) {
-//       document.getElementsByTagName("video")[index].style.width =
-//         100 / totalUsers + "%";
-//     }
-//   }
+  videoGrid.append(video);
+  let totalUsers = document.getElementsByTagName("video").length;
+  if (totalUsers > 1) {
+    for (let index = 0; index < totalUsers; index++) {
+      document.getElementsByTagName("video")[index].style.width =
+        100 / totalUsers + "%";
+    }
+  }
 
-//   // demonstrates how to detect that the user has stopped
-//   // sharing the screen via the browser UI.
-//   stream.getVideoTracks()[0].addEventListener('ended', () => {
-//     errorMsg('The user has ended sharing the screen');
-//     startButton.disabled = true;
-//   });
-// }
+  // demonstrates how to detect that the user has stopped
+  // sharing the screen via the browser UI.
+  stream.getVideoTracks()[0].addEventListener('ended', () => {
+    errorMsg('The user has ended sharing the screen');
+    startButton.disabled = true;
+  });
+}
 
-// function handleError(error) {
-//   errorMsg(`getDisplayMedia error: ${error.name}`, error);
-// }
+function handleError(error) {
+  errorMsg(`getDisplayMedia error: ${error.name}`, error);
+}
 
-// function errorMsg(msg, error) {
-//   const errorElement = document.querySelector('#errorMsg');
-//   errorElement.innerHTML += `<p>${msg}</p>`;
-//   if (typeof error !== 'undefined') {
-//     console.error(error);
-//   }
-// }
+function errorMsg(msg, error) {
+  const errorElement = document.querySelector('#errorMsg');
+  errorElement.innerHTML += `<p>${msg}</p>`;
+  if (typeof error !== 'undefined') {
+    console.error(error);
+  }
+}
 
-// const startButton = document.getElementById('startButton');
-// startButton.addEventListener('click', () => {
-//   navigator.mediaDevices.getDisplayMedia({video: true})
-//       .then(handleSuccess, handleError);
-// });
+const startButton = document.getElementById('startButton');
+startButton.addEventListener('click', () => {
+  navigator.mediaDevices.getDisplayMedia({video: true})
+      .then(handleSuccess, handleError);
+});
 
-// if ((navigator.mediaDevices && 'getDisplayMedia' in navigator.mediaDevices)) {
-//   startButton.disabled = false;
-// } else {
-//   errorMsg('getDisplayMedia is not supported');
-// }
+if ((navigator.mediaDevices && 'getDisplayMedia' in navigator.mediaDevices)) {
+  startButton.disabled = false;
+} else {
+  errorMsg('getDisplayMedia is not supported');
+}
 
 const exitButton = document.querySelector('.main__exit_button');
 
