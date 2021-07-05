@@ -26,7 +26,7 @@ navigator.mediaDevices.getUserMedia({
 
   socket.on('user-connected', userId => {
     connectToNewUser(userId, stream)
-    $("ul").append(`<br><h6 style="color:green;"><i><li class="message">${userId}<b>-joined the call</b><br/></li><i></h6><br>`);
+    $("ul").append(`<br><h6 style="color:MediumSeaGreen;"><i><li class="message">${userId}<b>-joined the call</b><br/></li><i></h6><br>`);
     scrollToBottom()
   })
   
@@ -83,7 +83,7 @@ text.addEventListener("keydown", (e) => {
 
 socket.on('user-disconnected', userId => {
   if (peers[userId]){
-    $("ul").append(`<br><h6 style="color:red;"><i><li class="message">${userId}<b>-left the call</b><br/></li><i></h6><br>`);
+    $("ul").append(`<br><h6 style="color: #c52a2a;"><i><li class="message">${userId}<b>-left the call</b><br/></li><i></h6><br>`);
     scrollToBottom()
     peers[userId].close()
   }
