@@ -26,7 +26,8 @@
     /* background-color: #000000;
     background-image: linear-gradient(147deg, #000000 0%, #2c3e50 74%);  */
     /* background-color: #003153; */
-    background-color: #131213;
+/*     background-color: #131213; */
+    background: linear-gradient(to top left, #131213 0%, #212121 100%);
     /* background-image: linear-gradient(315deg, #131213 0%, #414141 74%); */
     /* background-color: #131213; black shade */
     display: flex;
