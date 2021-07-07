@@ -28,7 +28,7 @@
 
 .main__right {
     background-color: black;
-    border-left: 1px solid #fcfcfd;
+    border-left: 1px solid #131213;
 }
 
 .main__controls {
@@ -137,27 +137,6 @@
     border-radius: 5px;
     background-color: #c52a2a;
 }
-
-.main__exit_button .tooltiptext::after {
-    content: " ";
-    position: absolute;
-    bottom: 100%;  /* At the top of the tooltip */
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: transparent transparent black transparent;
-  }
-
-.tooltip:hover .tooltiptext {
-    visibility: visible;
-  }
-
-.tooltip {
-    position: relative;
-    display: inline-block;
-    border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
-  }
   
 
   
