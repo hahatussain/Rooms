@@ -1,5 +1,5 @@
 # Rooms
-MS Teams clone developed as part of Microsoft Engage 2021. 
+MS Teams clone developed during Microsoft Engage 2021. 
 Deployed at - https://rooms-engage.herokuapp.com
 
 # List of extra features:
