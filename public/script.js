@@ -74,9 +74,9 @@ socket.on('user-disconnected', (userId, userName) => {
     let totalUsers = document.getElementsByTagName("video").length;
     if (totalUsers >=1) {
     for (let index = 0; index < totalUsers; index++) {
-      document.getElementsByTagName("video")[index].style.width =
+      document.getElementById('video-grid').getElementsByTagName("video")[index].style.width =
         100 / totalUsers + "%";
-      document.getElementsByTagName("video")[index].style.height =
+      document.getElementById('video-grid').getElementsByTagName("video")[index].style.height =
         100 / totalUsers + "%";
     }
   }
