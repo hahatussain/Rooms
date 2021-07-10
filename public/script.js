@@ -6,12 +6,12 @@ const myPeer = new Peer(undefined, {
   port: 443,
   secure: true,
 })
-const user = prompt("Enter your display name:"); //ask for a username through prompt
+const user = prompt("Enter your display name:"); //get username through prompt
 let myVideoStream;
 const myVideo = document.createElement('video')
 myVideo.muted = true;
 const peers = {}
-// get the audio video from user's device
+// get audio video from user's device
 navigator.mediaDevices.getUserMedia({ 
   video: true,
   audio: true
@@ -59,7 +59,7 @@ text.addEventListener("keydown", (e) => {
 });
 // listening for message from socket
 socket.on("createMessage", (message, userName) => { 
-  messages.innerHTML =                              // append message to message box
+  messages.innerHTML =                              
     messages.innerHTML +
     `<div class="message">
         <b><i class="bi bi-person-circle"></i><span> ${
