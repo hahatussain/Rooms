@@ -62,7 +62,7 @@ socket.on("createMessage", (message, userName) => {
   messages.innerHTML =                              // append message to message box
     messages.innerHTML +
     `<div class="message">
-        <b><i class="fas fa-user-circle"></i><span> ${
+        <b><i class="bi bi-person-circle"></i><span> ${
           userName === user ? "You" : userName
         }</span>:</b>
         <span>${message}</span>
@@ -248,7 +248,7 @@ raiseHand.addEventListener("click", (e) => {
 
 //listening for raiseHand event
 socket.on('raiseHand', userName =>{                  
-  $("ul").append(`<h6><li class="message"><i class="fas fa-user-circle"></i><span> ${
+  $("ul").append(`<h6><li class="message"><i class="bi bi-person-circle"></i><span> ${
     userName === user ? "You" : userName
   }:✋</span></li></h6>`);
 })
