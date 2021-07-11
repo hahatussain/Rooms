@@ -32,4 +32,5 @@ Working demo - https://youtu.be/_dJfUqXqVZM
 2. Built a basic chat application using socket.io documentation, by making few additions to the html doc.
 3. Added audio-video functionality, by making additions to server.js, the html doc and script.js. Followed the WebRTC documentation to implement audio-video streaming.
 4. Styled the html doc by creating style.css. 
-5. Add-on features like audio/video toggle, invite button, raise hand button, custom usernames and the leave button, were all made in the last phase with minimal changes made to the existing code.
+5. Asked for feedback from friend, and changed the layout of the video grid on their suggestion (brought user's video to lower corner).
+6. Add-on features like audio/video toggle, invite button, raise hand button, custom usernames and the leave button, were all made in the last phase with minimal changes made to the existing code.
