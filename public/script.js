@@ -101,6 +101,15 @@ function connectToNewUser(userId, stream) {
   })
   call.on('close', () => {
     video.remove();
+    let totalUsers = document.getElementsByTagName("video").length;
+    if (totalUsers >=1) {
+    for (let index = 0; index < totalUsers; index++) {
+      document.getElementById('video-grid').getElementsByTagName("video")[index].style.width =
+        100 / totalUsers + "%";
+      document.getElementById('video-grid').getElementsByTagName("video")[index].style.height =
+        100 / totalUsers + "%";
+    }
+  }
   })
 
   peers[userId] = call
