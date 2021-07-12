@@ -37,7 +37,6 @@ Working demo - https://youtu.be/_dJfUqXqVZM
 ppt-https://docs.google.com/presentation/d/1bvt2EgCNwVQAEGac1S8aex_C5SRzJmxCWCNFivAWbrI/edit?usp=sharing
 1. Created a signalling server. Then rendered an html document on the server.
 2. Built a basic chat application using socket.io documentation, by making few additions to the html doc.
-3. Added audio-video functionality, by making additions to server.js, the html doc and script.js. Followed the WebRTC documentation to implement audio-video streaming.
-4. Styled the html doc by creating style.css. 
-5. Asked for feedback from friend, and changed the layout of the video grid on their suggestion (brought user's video to lower corner).
-6. Add-on features like audio/video toggle, invite button, raise hand button, custom usernames and the leave button, were all made in the last sprint with minimal changes made to the existing code.
+3. Added audio-video functionality, by making additions to server.js, the html doc and script.js. Followed the WebRTC documentation to implement audio-video streaming. 
+4. Asked for feedback from friend, and changed the layout of the video grid on their suggestion (brought user's video to lower corner).
+5. Add-on features like audio/video toggle, invite button, raise hand button, custom usernames and the leave button, were all made in the last sprint with minimal changes made to the existing code.
