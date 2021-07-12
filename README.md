@@ -34,6 +34,7 @@ Working demo - https://youtu.be/_dJfUqXqVZM
 6. uuid (to generate unique links)
 
 # Agile methodology followed
+ppt-https://docs.google.com/presentation/d/1bvt2EgCNwVQAEGac1S8aex_C5SRzJmxCWCNFivAWbrI/edit?usp=sharing
 1. Created a signalling server. Then rendered an html document on the server.
 2. Built a basic chat application using socket.io documentation, by making few additions to the html doc.
 3. Added audio-video functionality, by making additions to server.js, the html doc and script.js. Followed the WebRTC documentation to implement audio-video streaming.
