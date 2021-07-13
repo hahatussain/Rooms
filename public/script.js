@@ -89,6 +89,11 @@ socket.on('user-disconnected', (userId, userName) => {
   }
 })
 
+const scrollToBottom = () => {
+  var d = $('.main__chat_window');
+  d.scrollTop(d.prop("scrollHeight"));
+}
+
 myPeer.on('open', (id) => {
   socket.emit('join-room', ROOM_ID, id, user)
 })
@@ -133,12 +138,6 @@ const addVideoStream = (videoEl, stream) => {
     }
   }
 };
-
-
-const scrollToBottom = () => {
-  var d = $('.main__chat_window');
-  d.scrollTop(d.prop("scrollHeight"));
-}
 
 //mic toggle function
 const muteUnmute = () => {
